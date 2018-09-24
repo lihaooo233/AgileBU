@@ -10,3 +10,10 @@ The web application created using React and a spring-boot backend with Kotlin, w
 ## Draft of System Architecture
 The following image shows the general overview of system architecture.
 ![draft](https://github.com/ayshimz/AgileBU/blob/master/DraftSystemArchitecture.jpg)
+
+## Components of This Project
+In this project, there are two parts: the front-end (with Node.js and React) and the backend (Kotlin).
+* agilebu - contains the code for the front-end
+* agilebuapi - contains the code for back-end
+
+Directions on how to run the app is available in the ReadMe files in each compoennet.
