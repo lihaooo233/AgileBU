@@ -16,4 +16,4 @@ In this project, there are two parts: the front-end (with Node.js and React) and
 * agilebu - contains the code for the front-end
 * agilebuapi - contains the code for back-end
 
-Directions on how to run the app is available in the ReadMe files in each compoennet.
+Directions on how to run the app is available in the ReadMe files in each componenet.
