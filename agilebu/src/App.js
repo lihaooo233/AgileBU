@@ -1,1 +1,1 @@
-import React, { Component } from 'react'import Header from './Header/Header'class App extends Component {  render() {    return (      <Header />    )  }}export default App
+import React, { Component } from 'react'import Header from './Header/Header'import RMenu from './RMenu/RMenu'class App extends Component {  render() {    return (        <div>            <Header />            <RMenu />        </div>    )  }}export default App
