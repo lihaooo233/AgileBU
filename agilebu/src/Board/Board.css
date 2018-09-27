@@ -1,0 +1,12 @@
+.lists {
+    padding: 0 10% 0 0;
+    margin: 5% 0 0 0 !important;
+    display: inline-block;
+    height: 90%;
+}
+
+.board{
+    position: fixed;
+    top: revert;
+    height: 90%;
+}
