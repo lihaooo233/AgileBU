@@ -17,62 +17,9 @@
 
 }
 
-.App-cardbox {
-    position:relative;
-    background: #BDBDBD;
-    height: 60%;
-    margin:2.5% 2.5% 1.25% 2.5%;
-}
-
-.App-cardgrid {
-    position:absolute;
-    top:0; bottom:0; right:0;
-    background:#BDBDBD;
-}
-
 .App-chatbox {
     position:relative;
-    background: #BDBDBD;
+    background: '#BDBDBD';
     height: 40%;
-    margin:1.25% 2.5% 2.5% 2.5%;
-}
-
-.App-taskname {
-    position:relative;
-    background: #848484;
-    width:95%;
-    height: 10%;
-    margin:2.5% 2.5% 1.25% 2.5%;
-}
-
-.App-taskdesc {
-    position:relative;
-    background: #848484;
-    width:95%;
-    height: 45%;
-    margin:1.25% 2.5% 1.25% 2.5%;
-}
-
-.App-completecrit {
-    position:relative;
-    background: #848484;
-    width:95%;
-    height: 20%;
-    margin:1.25% 2.5% 1.25% 2.5%;
-}
-
-.App-taskpoints {
-    position:relative;
-    background: #848484;
-    width:95%;
-    height: 10%;
-    margin:1.25% 2.5% 1.25% 2.5%;
-}
-
-.App-assignee {
-    position:relative;
-    background: #848484;
-    width:95%;
-    height: 10%;
-    margin:1.25% 2.5% 2.5% 2.5%;
+    margin: 0;
 }
