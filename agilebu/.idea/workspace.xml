@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2382eb22-eb86-412d-8a3c-6a23cca39c47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,15 +91,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Board/Board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="884">
+              <caret line="224" column="29" lean-forward="true" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#175#215#0" expanded="true" />
                 <element signature="e#4629#5586#0" />
                 <element signature="e#4820#5500#0" />
                 <element signature="e#5021#5442#0" />
-                <element signature="e#6271#6710#0" />
               </folding>
             </state>
           </provider>
@@ -308,7 +302,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/ayash/Desktop/EC601/AgileBU/agilebu/src/App.test.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538239561362" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538242501223" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../beauty-dnd-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -345,16 +339,15 @@
       <workItem from="1537804994789" duration="1393000" />
       <workItem from="1537806425418" duration="5287000" />
       <workItem from="1537824320022" duration="2156000" />
-      <workItem from="1538067524064" duration="18574000" />
+      <workItem from="1538067524064" duration="19515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27410000" />
+    <option name="totallyTimeSpent" value="28351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -529,15 +522,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board/Board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="884">
+          <caret line="224" column="29" lean-forward="true" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#175#215#0" expanded="true" />
             <element signature="e#4629#5586#0" />
             <element signature="e#4820#5500#0" />
             <element signature="e#5021#5442#0" />
-            <element signature="e#6271#6710#0" />
           </folding>
         </state>
       </provider>
