@@ -99,10 +99,6 @@ class TextFields extends React.Component {
     }
 }
 
-TextFields.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
-
 function SimpleCard(props) {
     const { classes } = props;
 

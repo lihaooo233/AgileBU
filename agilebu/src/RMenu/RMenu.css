@@ -19,7 +19,16 @@
 
 .App-chatbox {
     position:relative;
-    background: '#BDBDBD';
+    background: '#848484';
     height: 40%;
     margin: 0;
+}
+
+.App-grid {
+    container:true;
+    direction:"column";
+    justify:"flex-start";
+    alignItems:"stretch";
+    className:"App-sidegrid";
+    wrap:"nowrap";
 }
