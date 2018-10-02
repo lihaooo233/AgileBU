@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../buicon.svg'
+import logo from '../bulogo.png'
 import './Header.css'
 
 export default class Header extends Component {

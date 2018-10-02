@@ -7,11 +7,10 @@ import Grid from '@material-ui/core/Grid';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import './Board.css'
 
+const fakeData = [{ id: `item-0`, content: 'create fake data\n\n', user: 'nwiebe@bu.edu' },{ id: `item-1`, content: 'Create a web application base using React.js\n\n', user: 'shimizu@bu.edu' }, { id: `item-2`, content: 'create three columns\n\n', user: '' }, { id: `item-3`, content: 'Something else\n\n', user: '' }, { id: `item-4`, content: '\n\n', user: '' },{ id: `item-5`, content: '\n\n', user: 'shimizu@bu.edu' },{ id: `item-6`, content: '\n\n', user: 'nwiebe@bu.edu' }]
+
 const getItems = (count, offset = 0) =>
-  Array.from({ length: count }, (v, k) => k).map(k => ({
-    id: `item-${k + offset}`,
-    content: `item ${k + offset}`
-  }));
+  fakeData.slice(count, count+offset)
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
@@ -61,9 +60,9 @@ const getListStyle = isDraggingOver => ({
 
 export default class Board extends Component {
   state = {
-    todo: getItems(10),
-    doing: getItems(5, 10),
-    done: getItems(3, 20)
+    todo: getItems(0, 3),
+    doing: getItems(3, 3),
+    done: getItems(6, 2)
   };
 
   /**
@@ -163,6 +162,7 @@ export default class Board extends Component {
                               provided.draggableProps.style
                             )}>
                             {item.content}
+                            {item.user}
                           </div>
                         )}
                       </Draggable>
@@ -193,6 +193,7 @@ export default class Board extends Component {
                               provided.draggableProps.style
                             )}>
                             {item.content}
+                            {item.user}
                           </div>
                         )}
                       </Draggable>
@@ -223,6 +224,7 @@ export default class Board extends Component {
                               provided.draggableProps.style
                             )}>
                             {item.content}
+                            {item.user}
                           </div>
                         )}
                       </Draggable>
