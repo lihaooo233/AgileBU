@@ -4,11 +4,15 @@ import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
     card: {
+        item:true,
         background: '#848484',
         height: '60%',
+        overflow: 'auto',
     },
     title: {
         fontSize: 12,
@@ -19,9 +23,9 @@ const styles = theme => ({
     textField: {
         marginLeft: theme.spacing.unit,
         marginRight: theme.spacing.unit,
-        width: 200,
     },
     container: {
+        item:true,
         display: 'flex',
         flexWrap: 'wrap',
     },
@@ -63,7 +67,7 @@ class TextFields extends React.Component {
                     margin="dense"
                     autoFocus
                     multiline
-                    rows={7}
+                    rows={6}
                 />
                 <TextField
                     id="standard-name"
@@ -74,7 +78,7 @@ class TextFields extends React.Component {
                     margin="dense"
                     autoFocus
                     multiline
-                    rows={6}
+                    rows={4}
                 />
                 <TextField
                     id="standard-name"
@@ -105,7 +109,21 @@ function SimpleCard(props) {
     return (
         <Card className={classes.card}>
             <CardContent>
-                <TextFields />
+                <Grid container spacing={16}>
+                    <Grid item xs={12}>
+                        <TextFields />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Button variant="outlined" size="large">
+                            Save
+                        </Button>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Button variant="outlined" size="large">
+                            Cancel
+                        </Button>
+                    </Grid>
+                </Grid>
             </CardContent>
         </Card>
     );
