@@ -8,5 +8,5 @@ import com.buagile.agileapplicationapi.model.Data
 @Repository
 interface UserRepository : CrudRepository<Data, Long> {
 
-    fun findByUserId(UserId: String): Iterable<Data>
+    fun findByType(UserId: String): Iterable<Data>
 }

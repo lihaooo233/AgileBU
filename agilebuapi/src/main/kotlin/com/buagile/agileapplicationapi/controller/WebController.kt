@@ -21,8 +21,8 @@ class WebController {
     @RequestMapping("/findall")
     fun findAll() = repository.findAll()
 
-    @RequestMapping("findbyUserId/{userId}")
-    fun findByUserId(@PathVariable userId: String)
-            = repository.findByUserId(userId)
+    @RequestMapping("findbyType/{type}")
+    fun findByType(@PathVariable type: String)
+            = repository.findByType(type)
 
 }
