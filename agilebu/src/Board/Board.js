@@ -6,6 +6,17 @@ import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import './Board.css'
+import { connect } from 'react-redux';
+import { boardChange } from '../actions/BoardAction'
+
+
+const mapStateToProps = state => ({
+  ...state
+})
+
+const mapDispatchToProps = dispatch => ({
+  boardChange: (payload) => dispatch(boardChange(payload))
+})
 
 const fakeData = [{ id: `item-0`, content: 'create fake data\n\n', user: 'nwiebe@bu.edu' },{ id: `item-1`, content: 'Create a web application base using React.js\n\n', user: 'shimizu@bu.edu' }, { id: `item-2`, content: 'create three columns\n\n', user: '' }, { id: `item-3`, content: 'Something else\n\n', user: '' }, { id: `item-4`, content: '\n\n', user: '' },{ id: `item-5`, content: '\n\n', user: 'shimizu@bu.edu' },{ id: `item-6`, content: '\n\n', user: 'nwiebe@bu.edu' }]
 
@@ -58,12 +69,13 @@ const getListStyle = isDraggingOver => ({
   width: 250
 });
 
-export default class Board extends Component {
+class Board extends Component {
   state = {
     todo: getItems(0, 3),
     doing: getItems(3, 3),
     done: getItems(6, 2)
   };
+
 
   /**
    * A semi-generic way to handle multiple lists. Matches
@@ -131,6 +143,12 @@ export default class Board extends Component {
         doing: newResult.droppable2,
         done: newResult.droppable3
       });
+
+      this.props.boardChange({
+        todo: newResult.droppable,
+        doing: newResult.droppable2,
+        done: newResult.droppable3
+      })
     }
   };
 
@@ -240,3 +258,5 @@ export default class Board extends Component {
     );
   }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Board);
