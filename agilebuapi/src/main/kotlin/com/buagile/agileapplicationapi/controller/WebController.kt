@@ -3,7 +3,7 @@ package com.buagile.agileapplicationapi.controller
 import org.springframework.beans.factory.annotation.Autowired
 
 import com.buagile.agileapplicationapi.repo.UserRepository
-import com.buagile.agileapplicationapi.model.TaskUser
+import com.buagile.agileapplicationapi.model.Data
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -13,8 +13,8 @@ class WebController {
     lateinit var repository: UserRepository
 
     @RequestMapping("/save", method = arrayOf(RequestMethod.POST))
-    fun save(@RequestBody taskuser: TaskUser): String {
-        repository.save(TaskUser(taskuser.userId, taskuser.userName, taskuser.userEmail))
+    fun save(@RequestBody data: Data): String {
+        repository.save(Data(data.type, data.data))
         return repository.findAll().toString()
     }
 
