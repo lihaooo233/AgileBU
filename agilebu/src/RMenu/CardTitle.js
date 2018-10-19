@@ -33,11 +33,11 @@ const styles = theme => ({
 
 class TextFields extends React.Component {
     state = {
-        name: 'Import from button.',
-        description: 'Also import.',
-        criteria: 'From button.',
-        points: '3',
-        assignee: 'Namey McNameFace'
+        name: '',
+        description: '',
+        criteria: '',
+        points: '',
+        assignee: ''
     };
 
     handleChange = name => event => {
@@ -67,7 +67,7 @@ class TextFields extends React.Component {
                     margin="dense"
                     autoFocus
                     multiline
-                    rows={6}
+                    rows={5}
                 />
                 <TextField
                     id="standard-name"
