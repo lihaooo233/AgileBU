@@ -6,12 +6,11 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 
 @Entity
-class TaskUser(
-        val userId: String,
-        val userName: String,
-        val userEmail: String,
+class Data(
+        val type: String,
+        val data: String,
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long = -1) {
 
-    private constructor() : this("", "", "")
+    private constructor() : this("", "")
 }

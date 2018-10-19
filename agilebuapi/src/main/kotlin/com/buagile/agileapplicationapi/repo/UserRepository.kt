@@ -2,11 +2,11 @@ package com.buagile.agileapplicationapi.repo
 
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
-import com.buagile.agileapplicationapi.model.TaskUser
+import com.buagile.agileapplicationapi.model.Data
 
 
 @Repository
-interface UserRepository : CrudRepository<TaskUser, Long> {
+interface UserRepository : CrudRepository<Data, Long> {
 
-    fun findByUserId(UserId: String): Iterable<TaskUser>
+    fun findByUserId(UserId: String): Iterable<Data>
 }
