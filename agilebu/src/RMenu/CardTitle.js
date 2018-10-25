@@ -9,7 +9,6 @@ import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
     card: {
-        item:true,
         background: '#848484',
         height: '60%',
         overflow: 'auto',
@@ -25,7 +24,6 @@ const styles = theme => ({
         marginRight: theme.spacing.unit,
     },
     container: {
-        item:true,
         display: 'flex',
         flexWrap: 'wrap',
     },
@@ -56,7 +54,7 @@ class TextFields extends React.Component {
                     value={this.state.name}
                     onChange={this.handleChange('name')}
                     margin="dense"
-                    autoFocus
+                    fullWidth
                 />
                 <TextField
                     id="standard-name"
@@ -65,9 +63,9 @@ class TextFields extends React.Component {
                     value={this.state.description}
                     onChange={this.handleChange('description')}
                     margin="dense"
-                    autoFocus
                     multiline
                     rows={5}
+                    fullWidth
                 />
                 <TextField
                     id="standard-name"
@@ -76,9 +74,9 @@ class TextFields extends React.Component {
                     value={this.state.criteria}
                     onChange={this.handleChange('criteria')}
                     margin="dense"
-                    autoFocus
                     multiline
                     rows={4}
+                    fullWidth
                 />
                 <TextField
                     id="standard-name"
@@ -87,7 +85,7 @@ class TextFields extends React.Component {
                     value={this.state.points}
                     onChange={this.handleChange('points')}
                     margin="dense"
-                    autoFocus
+                    fullWidth
                 />
                 <TextField
                     id="standard-name"
@@ -96,7 +94,7 @@ class TextFields extends React.Component {
                     value={this.state.assignee}
                     onChange={this.handleChange('assignee')}
                     margin="dense"
-                    autoFocus
+                    fullWidth
                 />
             </form>
         );
@@ -109,16 +107,16 @@ function SimpleCard(props) {
     return (
         <Card className={classes.card}>
             <CardContent>
-                <Grid container spacing={16}>
+                <Grid container spacing={8}>
                     <Grid item xs={12}>
                         <TextFields />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Button variant="outlined" size="large">
                             Save
                         </Button>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Button variant="outlined" size="large">
                             Cancel
                         </Button>

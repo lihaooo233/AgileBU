@@ -3,24 +3,6 @@
 }
 
 .App-logo {
-    height: 50px;
+    height: 40px;
     padding: 5px 0px 5px 5px;
-}
-
-.App-header {
-    background-color: #111111;
-    height: 60px;
-    font-size: 1.0em;
-    color: white;
-    position: center;
-}
-
-.App-title {
-    font-size: 1.0em;
-    text-align-all: center;
-    color: white;
-}
-
-.App-intro {
-    font-size: medium;
 }
