@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = ({
     sidebar: {
         position:'absolute',
-        top:40, bottom:0, right:0,
+        top:60, bottom:0, right:0,
         width:300,
         background:'#E6E6E6',
     },
