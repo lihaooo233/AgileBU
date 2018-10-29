@@ -16,9 +16,9 @@ function Header(props) {
     const { classes } = props;
 
     return (
-        <div className="App">
+        <div className="Header">
             <Card className={classes.header}>
-                <Grid container spacing={24} alignItems="center">
+                <Grid container spacing={0} alignItems="center">
                     <Grid item xs={7} sm={8} md={9} lg={10}>
                         <img src={logo} className="App-logo" alt="logo" />
                     </Grid>
