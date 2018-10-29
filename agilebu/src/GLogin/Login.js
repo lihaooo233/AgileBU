@@ -27,10 +27,15 @@ class Login extends Component {
             this.forceUpdate()
         }
 
+        const logout = () => {
+            loginstatus = 0
+            this.forceUpdate()
+        }
+
         if (loginstatus > 0) {
             return (
                 <div className="App">
-                    <Button variant="contained">Logged in</Button>
+                    <Button variant="contained" onClick={logout}>Logged in</Button>
                 </div>
             );
         }
